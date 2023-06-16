@@ -1,5 +1,4 @@
 <?php
-// login.php
 
 // Retrieve form data
 $username = $_POST['username'];
@@ -22,7 +21,6 @@ if (empty($username) || empty($password)) {
     $result = $conn->query($sql);
     
     if ($result->num_rows == 1) {
-        echo "Login successful!";
         header('Location: home.php');
         // You can add session management or redirect to a different page here
     } else {
