@@ -1,37 +1,37 @@
 <?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
+// login.php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-  }
+// Retrieve form data
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-  }
+// Validate the data (you can add more validation if needed)
+if (empty($username) || empty($password)) {
+    echo "Please enter username and password.";
+} else {
+    // Connect to the database (replace with your database credentials)
+    $conn = new mysqli('localhost', 'root', '', 'tutorial');
+    
+    // Check if the connection was successful
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    
+    // Perform the login verification
+    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows == 1) {
+        echo "Login successful!";
+        header('Location: home.php');
+        // You can add session management or redirect to a different page here
+    } else {
+        echo "Invalid username or password.";
+        header('Location: index.php');
 
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
+    }
+    
+    // Close the database connection
+    $conn->close();
 }
 ?>
