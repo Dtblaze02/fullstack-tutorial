@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Login Page</title>
+  <meta type="description" content="This is just a tutorial about fullstack development">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
