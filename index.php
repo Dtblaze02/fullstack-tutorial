@@ -24,7 +24,7 @@
     </form>
   </div>
   <div class="con">
-    <h3>Commit</h3>
+    
   </div>
 </body>
 </html>
