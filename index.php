@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <h2>Login</h2>
+    <h2>Login Page</h2>
     <form method="post" action="login.php">
       <div class="form-group">
         <label for="username">Username:</label>
@@ -23,5 +23,6 @@
       <a href="register.html">Register</a>
     </form>
  </div>
+
 </body>
 </html>
