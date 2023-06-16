@@ -8,6 +8,7 @@
 <body>
   <div class="container">
     <h2>Login Page</h2>
+    <p>Enter Your Details Below to Login</p>
     <form method="post" action="login.php">
       <div class="form-group">
         <label for="username">Username:</label>
