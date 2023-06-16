@@ -3,10 +3,11 @@
 // Retrieve form data
 $username = $_POST['username'];
 $password = $_POST['password'];
+$error_message = "";
 
 // Validate the data (you can add more validation if needed)
 if (empty($username) || empty($password)) {
-    echo "Please enter username and password.";
+    $error_message = "Please enter username and password.";
 } else {
     // Connect to the database (replace with your database credentials)
     $conn = new mysqli('localhost', 'root', '', 'tutorial');
