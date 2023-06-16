@@ -30,7 +30,6 @@ if (empty($username) || empty($password)) {
         header('Location: index.php');
 
     }
-    
     // Close the database connection
     $conn->close();
 }
