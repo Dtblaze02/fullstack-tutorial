@@ -2,60 +2,7 @@
 <html>
 <head>
   <title>Login Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 400px;
-      margin: 100px auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .container h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .form-group input[type="text"],
-    .form-group input[type="password"] {
-      width: 100%;
-      padding: 8px;
-      border-radius: 3px;
-      border: 1px solid #ccc;
-    }
-
-    .form-group button {
-      width: 100%;
-      padding: 8px;
-      border-radius: 3px;
-      background-color: #4caf50;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-
-    .form-group button:hover {
-      background-color: #45a049;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <div class="container">
