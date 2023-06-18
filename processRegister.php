@@ -19,7 +19,7 @@ if (empty($username) || empty($email) || empty($password)) {
     }
     
     // Perform the registration
-    $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
+    $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '" . md5($password) . "')";
     
     if ($conn->query($sql) === TRUE) {
         header('Location: index.php');
