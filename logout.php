@@ -1,11 +1,8 @@
 <?php
-// Start the session
-session_start();
-
-// Destroy all session data
-session_destroy();
-
-// Redirect to the login page or any other desired page
-header("Location: index.php");
-exit;
+    session_start();
+    // Destroy session
+    if(session_destroy()) {
+        // Redirecting To Home Page
+        header("Location: index.php");
+    }
 ?>
