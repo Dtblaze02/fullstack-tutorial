@@ -1,3 +1,6 @@
+<?php
+require('auth.php')
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +52,7 @@
 </head>
 <body>
   <div class="container">
-    <h2>My Social Media Page</h2>
+    <h2>Welcome, <?php echo $_SESSION['username']; ?></h2>
     <div class="post">
       <div class="author">John Doe</div>
       <div class="timestamp">June 15, 2023 10:00 AM</div>
