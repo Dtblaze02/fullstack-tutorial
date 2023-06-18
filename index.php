@@ -7,9 +7,6 @@
 </head>
 <body>
   <div class="container">
-    <?php if(isset($error_message)){
-      echo "<span>". $error_message ."</span>";
-    } ?>
     <span id='error_message' class="text-danger"></span>
     <h2>Login Page</h2>
     <p>Enter Your Details Below to Login</p>
@@ -25,7 +22,7 @@
       <div class="form-group">
         <button type="submit">Login</button>
       </div>
-      <a href="register.html">Register</a>
+      <a href="register.php">Register</a>
     </form>
   </div>
 
