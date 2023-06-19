@@ -1,3 +1,4 @@
+<?php require('auth/login_auth.php')?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,11 +7,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="auth-forms">
     <span id='error_message' class="text-danger"></span>
     <h2>Login Page</h2>
     <p>Enter Your Details Below to Login</p>
-    <form method="post" action="login.php">
+    <form method="post" action="auth/login.php">
       <div class="form-group">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" placeholder="Enter your username">
@@ -22,7 +23,7 @@
       <div class="form-group">
         <button type="submit">Login</button>
       </div>
-      <a href="register.php">Register</a>
+      <a href="pages/register.php">Register</a>
     </form>
   </div>
 
