@@ -16,6 +16,7 @@ if (empty($username) || empty($email) || empty($password)) {
     $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '" . md5($password) . "')";
     
     if ($conn->query($sql) === TRUE) {
+        echo "Registration successful";
         header('Location: ../index.php');
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
