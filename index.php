@@ -13,11 +13,11 @@
     <h2 class="text-center">Login Page</h2>
     <form method="post" action="auth/login.php">
       <div class="form-group">
-        <label for="username">Username:</label>
+        <label for="username"></label>
         <input type="text" id="username" name="username" placeholder="Enter your username">
       </div>
       <div class="form-group">
-        <label for="password">Password:</label>
+        <label for="password"></label>
         <input type="password" id="password" name="password" placeholder="Enter your password">
       </div>
       <div class="form-group">
