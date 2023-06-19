@@ -3,7 +3,6 @@
 <html>
 <head>
   <title>Registration Page</title>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -14,17 +13,14 @@
     <h4 class="text-center mb-3">Registration Page</h4>
     <form method="post" action="../auth/register.php" id="registrationForm" onsubmit="validateForm(event)">
       <div class="form-group">
-        <label for="username">Username:</label>
         <input type="text" id="username" name="username" placeholder="Enter your username">
         <span class="error-message text-danger" id="usernameError"></span>
       </div>
       <div class="form-group">
-        <label for="password">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter your Email">
         <span class="error-message text-danger" id="emailError"></span>
       </div>
       <div class="form-group">
-        <label for="password">Password:</label>
         <input type="password" id="password" name="password" placeholder="Enter your password">
         <span class="error-message text-danger" id="passwordErr"></span>
       </div>
