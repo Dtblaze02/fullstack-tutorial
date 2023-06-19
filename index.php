@@ -25,7 +25,7 @@
       <div class="form-group">
         <button type="submit">Login</button>
       </div>
-      <a href="register.html">Register</a>
+      <a href="register.php">Register</a>
     </form>
   </div>
 
